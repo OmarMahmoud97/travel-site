@@ -1,0 +1,15 @@
+@use "./variables.scss" as *;
+
+@mixin subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $secondarycolor;
+}
+
+@mixin card {
+  background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

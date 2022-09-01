@@ -1,12 +1,5 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+@use "./variables.scss" as *;
+@use "./mixins" as *;
 
 #active {
   /* text-decoration: underline;
@@ -23,8 +16,10 @@ html {
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
-  position: -webkit-sticky;
   position: sticky;
+
+  .main-nav__header {
+  @include subtitle;
 }
 
 .main-nav__list {
@@ -35,12 +30,14 @@ html {
   justify-content: space-around;
   margin-right: 4rem;
   font-weight: 600;
+  li .main-nav__item {
+  color: $secondarycolor;
+  text-decoration: none;
+}
+}
 }
 
-.main-nav__header {
-  color: #335576;
-}
 
-li .main-nav__item {
-  color: #335576;
-} /*# sourceMappingURL=destination.css.map */
+
+
+

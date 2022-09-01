@@ -1,0 +1,10 @@
+@use "./_partials/variables.scss" as *;
+@use "./_partials/resets.scss" as*;
+@use "./_partials/navbar.scss";
+@use "./_partials/hero.scss" as*;
+@use "./_partials/recommendations.scss" as*;
+
+h1,
+p{
+  color: $secondarycolor;
+}

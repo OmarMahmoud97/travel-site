@@ -26,8 +26,12 @@ html {
   position: -webkit-sticky;
   position: sticky;
 }
-
-.main-nav__list {
+.main-nav .main-nav__header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #335576;
+}
+.main-nav .main-nav__list {
   display: flex;
   list-style: none;
   width: 30vw;
@@ -36,11 +40,7 @@ html {
   margin-right: 4rem;
   font-weight: 600;
 }
-
-.main-nav__header {
+.main-nav .main-nav__list li .main-nav__item {
   color: #335576;
-}
-
-li .main-nav__item {
-  color: #335576;
-} /*# sourceMappingURL=destination.css.map */
+  text-decoration: none;
+}/*# sourceMappingURL=destination.css.map */
