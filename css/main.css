@@ -8,6 +8,11 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #active {
   /* text-decoration: underline;
   text-decoration-color: #db7a4e;
@@ -91,27 +96,27 @@ html {
 }
 .recommendations .recommendations-box .hawaii {
   background-image: url(/assets/Images/hawaii.jpg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .recommendations .recommendations-box .iceland {
   background-image: url(/assets/Images/iceland.jpg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .recommendations .recommendations-box .greece {
   background-image: url(/assets/Images/greece.jpg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .recommendations .recommendations-box .recommendations_box__item {
   height: 70%;
@@ -126,6 +131,60 @@ html {
   color: white;
   font-weight: 600;
   font-size: 1.6rem;
+}
+
+footer {
+  background-color: #FEFAF5;
+  height: 12vh;
+  padding: 1rem;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FEFAF5;
+  align-items: flex-start;
+}
+.footer_container .footer_contact .contact_header {
+  color: #335576;
+}
+.footer_container .footer_hours {
+  width: 50vw;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer_container .footer_hours .hours_header {
+  color: #335576;
+}
+.footer_container .footer_hours .hours_subheader {
+  width: 100%;
+}
+.footer_container .footer_hours .hours_subheader ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0;
+}
+.footer_container .footer_hours .hours {
+  width: 100%;
+}
+.footer_container .footer_hours .hours ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0;
+}
+.footer_container .footer_social .social_header {
+  color: #335576;
+}
+.footer_container .footer_social a {
+  text-decoration: none;
 }
 
 h1,
