@@ -1,0 +1,74 @@
+@use "./variables.scss" as *;
+@use "./resets.scss" as *;
+@use "./mixins" as *;
+footer{
+
+  background-color: #FEFAF5;
+    height: 12vh;
+    padding: 1rem;
+}
+.footer_container{
+  @include flex-center;
+  background-color: $primarycolor;
+  align-items: flex-start;
+.footer_contact{
+  .contact_header{
+    color: $secondarycolor;
+  }
+}
+ .footer_hours{
+  width: 50vw;
+  display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    .hours_header{
+  color: $secondarycolor;
+  }
+  .hours_subheader{
+    width: 100%;
+  ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0;
+  color: $thirdcolor;
+  font-weight: 500;
+  font-size: 0.8rem
+};
+};
+.hours{
+  width: 100%;
+  ul{
+    list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 0;
+  }
+}
+ }
+ .footer_social{
+  &_header{
+    color: $secondarycolor;
+  }
+  a {
+  text-decoration: none;
+  
+  img{
+    width: 2rem;
+  }
+  .facebook {
+  width: 1rem;
+}
+
+}
+ }
+}
+
+
+
+
+
