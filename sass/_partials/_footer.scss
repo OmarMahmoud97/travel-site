@@ -8,7 +8,7 @@ footer{
     padding: 1rem;
 }
 .footer_container{
-  @include flex-center;
+  @include flex-around;
   background-color: $primarycolor;
   align-items: flex-start;
 .footer_contact{
@@ -27,11 +27,9 @@ footer{
   .hours_subheader{
     width: 100%;
   ul{
+    @include flex-between;
   list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
   padding: 0;
   color: $thirdcolor;
   font-weight: 500;
@@ -41,10 +39,8 @@ footer{
 .hours{
   width: 100%;
   ul{
+    @include flex-between;
     list-style: none;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       flex-direction: row;
       padding: 0;
   }

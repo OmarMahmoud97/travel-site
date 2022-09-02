@@ -8,13 +8,33 @@
 }
 
 @mixin card {
-  @include flex-center;
+  @include flex-around;
   background-size: cover;
     background-position: center;
 }
 
-@mixin flex-center{
-  display: flex;
+@mixin flex-around{
     justify-content: space-around;
-    align-items: center;
+    @include flex-center;
 }
+
+@mixin flex-between{
+  @include flex-center;
+    justify-content: space-between;   
+}
+@mixin flex-evenly {
+  @include flex-center;
+  justify-content: space-evenly;
+}
+
+@mixin flex-center{
+  @include flex-center;
+  justify-content: center;
+}
+
+@mixin display-center{
+  display: flex;
+  align-items: center
+  ;
+}
+@include flex-center;

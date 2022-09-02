@@ -1,12 +1,11 @@
 @use "./variables.scss" as *;
 @use "./resets.scss" as*;
+@use "./mixins" as *;
 
 .hero {
+  @include flex-evenly;
   background-color: #fefaf5;
   height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   padding-top: 4rem;
   .hero-left {
   width: 47vw;
@@ -24,12 +23,10 @@
 }
 
 .hero-right {
+  @include flex-center;
   background-image: url(../../assets/Images/hero.png);
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 20rem;
     width: 24rem;
   ;
