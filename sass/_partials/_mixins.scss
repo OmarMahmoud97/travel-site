@@ -28,13 +28,11 @@
 }
 
 @mixin flex-center{
-  @include flex-center;
-  justify-content: center;
+  display: flex;
+  align-items: center;
 }
-
 @mixin display-center{
   display: flex;
   align-items: center
   ;
 }
-@include flex-center;

@@ -5,7 +5,6 @@ footer{
 
   background-color: #FEFAF5;
     height: 12vh;
-    padding: 1rem;
 }
 .footer_container{
   @include flex-around;
@@ -47,6 +46,10 @@ footer{
 }
  }
  .footer_social{
+  height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   &_header{
     color: $secondarycolor;
   }
