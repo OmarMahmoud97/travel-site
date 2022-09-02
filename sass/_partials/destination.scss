@@ -1,15 +1,13 @@
-<<<<<<< HEAD
-@use "./variables.scss" as *;
-@use "./resets.scss" as*;
-@use "./navbar.scss";
-=======
+
 @use "./variables" as *;
 @use "./resets.scss" as*;
-@use "./navbar.scss";
-@use "./hero.scss" as*;
+@use "./navbar"as *;
+@use "./hero"as *;
 @use "./recommendations.scss" as*;
 @use "./footer.scss";
 @use "./mixins" as *;
+
+
 .destination-container1,
 .destination-container2,
 .destination-container3{

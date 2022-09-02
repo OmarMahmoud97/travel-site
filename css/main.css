@@ -28,14 +28,9 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
-<<<<<<< HEAD
-  position: -webkit-sticky;
-  position: sticky;
-=======
   position: fixed;
   width: 100%;
   height: 4rem;
->>>>>>> cc0bbe1 (add destination page and orginise footer scss)
 }
 .main-nav .main-nav__header {
   font-size: 1.6rem;
@@ -62,10 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-<<<<<<< HEAD
-=======
   padding-top: 4rem;
->>>>>>> cc0bbe1 (add destination page and orginise footer scss)
 }
 .hero .hero-left {
   width: 47vw;
@@ -178,12 +170,9 @@ footer {
   justify-content: space-between;
   flex-direction: row;
   padding: 0;
-<<<<<<< HEAD
-=======
   color: #DB7A4E;
   font-weight: 500;
   font-size: 0.8rem;
->>>>>>> cc0bbe1 (add destination page and orginise footer scss)
 }
 .footer_container .footer_hours .hours {
   width: 100%;
@@ -196,25 +185,18 @@ footer {
   flex-direction: row;
   padding: 0;
 }
-<<<<<<< HEAD
-.footer_container .footer_social .social_header {
-=======
 .footer_container .footer_social_header {
->>>>>>> cc0bbe1 (add destination page and orginise footer scss)
   color: #335576;
 }
 .footer_container .footer_social a {
   text-decoration: none;
 }
-<<<<<<< HEAD
-=======
 .footer_container .footer_social a img {
   width: 2rem;
 }
 .footer_container .footer_social a .facebook {
   width: 1rem;
 }
->>>>>>> cc0bbe1 (add destination page and orginise footer scss)
 
 h1,
 p {

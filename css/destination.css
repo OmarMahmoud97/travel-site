@@ -8,14 +8,11 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-<<<<<<< HEAD
-=======
 body {
   margin: 0;
   padding: 0;
 }
 
->>>>>>> cc0bbe1 (add destination page and orginise footer scss)
 #active {
   /* text-decoration: underline;
   text-decoration-color: #db7a4e;
@@ -31,13 +28,6 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
-<<<<<<< HEAD
-  position: -webkit-sticky;
-  position: sticky;
-}
-
-.main-nav__list {
-=======
   position: fixed;
   width: 100%;
   height: 4rem;
@@ -48,7 +38,6 @@ body {
   color: #335576;
 }
 .main-nav .main-nav__list {
->>>>>>> cc0bbe1 (add destination page and orginise footer scss)
   display: flex;
   list-style: none;
   width: 30vw;
@@ -57,16 +46,6 @@ body {
   margin-right: 4rem;
   font-weight: 600;
 }
-<<<<<<< HEAD
-
-.main-nav__header {
-  color: #335576;
-}
-
-li .main-nav__item {
-  color: #335576;
-} /*# sourceMappingURL=destination.css.map */
-=======
 .main-nav .main-nav__list li .main-nav__item {
   color: #335576;
   text-decoration: none;
@@ -275,4 +254,3 @@ footer {
   margin: 0;
   font-size: 1.2rem;
 }/*# sourceMappingURL=destination.css.map */
->>>>>>> cc0bbe1 (add destination page and orginise footer scss)
