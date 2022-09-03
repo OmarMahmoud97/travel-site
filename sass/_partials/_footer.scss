@@ -11,9 +11,23 @@ footer{
   background-color: $primarycolor;
   align-items: flex-start;
 .footer_contact{
-  .contact_header{
+  .contact_item{
+    height: 23vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+    .contact_head{
     color: $secondarycolor;
   }
+  .contact_subhead{
+        color: $thirdcolor;
+  }
+  // .contact_email{
+    
+  // }
+}
+  
 }
  .footer_hours{
   width: 50vw;
@@ -47,13 +61,20 @@ footer{
  }
  .footer_social{
   height: 10rem;
+  width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  &_header{
+    .social_head{
+      .social_header{
     color: $secondarycolor;
   }
-  a {
+    }
+  .social_icons{
+    justify-content: space-between;
+      display: flex;
+      align-items: flex-start;
+    a {
   text-decoration: none;
   
   img{
@@ -64,6 +85,8 @@ footer{
 }
 
 }
+  }
+  
  }
 }
 
