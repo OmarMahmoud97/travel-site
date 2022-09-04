@@ -35,7 +35,15 @@
   li &__item {
   color: $secondarycolor;
   text-decoration: none;
+
+ 
 }
+a:hover{
+    color: #ffffff;
+    background-color: $thirdcolor;
+    border-radius: 1rem;
+    padding: 0.1rem 0.2rem;
+  }
 }
 }
 

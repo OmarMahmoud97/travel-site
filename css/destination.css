@@ -51,6 +51,12 @@ li .navbar__list__item {
   color: #335576;
   text-decoration: none;
 }
+.navbar__list a:hover {
+  color: #ffffff;
+  background-color: #DB7A4E;
+  border-radius: 1rem;
+  padding: 0.1rem 0.2rem;
+}
 
 .hero {
   display: flex;
@@ -179,6 +185,7 @@ footer {
 .footer .footer__contact .footer__contact--item .footer__contact--email .email {
   text-decoration: none;
   color: #335576;
+  font-weight: 500;
 }
 .footer .footer__hours {
   width: 50vw;
@@ -264,6 +271,13 @@ h1 {
   padding-top: 4rem;
 }
 
+.destination {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .destination__greece {
   background-image: url(/assets/Images/greece.jpg);
 }
@@ -274,13 +288,6 @@ h1 {
 
 .destination__iceland {
   background-image: url(/assets/Images/iceland.jpg);
-}
-
-.destination {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .destination__day {
