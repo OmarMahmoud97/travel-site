@@ -171,7 +171,9 @@ footer {
   color: #DB7A4E;
 }
 .footer_container .footer_contact .contact_item .contact_subhead .contact_subheader {
-  margin: 0;
+  margin: 0 0 0.4rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 .footer_container .footer_hours {
   width: 50vw;
@@ -201,6 +203,7 @@ footer {
 .footer_container .footer_hours .hours {
   width: 100%;
   line-height: 0;
+  color: #335576;
 }
 .footer_container .footer_hours .hours ul {
   display: flex;

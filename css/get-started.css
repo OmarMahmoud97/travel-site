@@ -49,104 +49,6 @@ html body {
   text-decoration: none;
 }
 
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: #fefaf5;
-  height: 50vh;
-  padding-top: 4rem;
-}
-.hero .hero-left {
-  width: 47vw;
-}
-.hero .hero-left h1 {
-  font-size: 2.2rem;
-}
-.hero .hero-left a {
-  background-color: #DB7A4E;
-  padding: 0.5rem 2rem;
-  border-radius: 2rem;
-  color: white;
-  font-weight: 500;
-  text-decoration: none;
-}
-.hero .hero-right {
-  display: flex;
-  align-items: center;
-  background-image: url(../../assets/Images/hero.png);
-  background-size: cover;
-  background-position: center;
-  height: 20rem;
-  width: 24rem;
-}
-
-.recommendations .recommendations_header {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #335576;
-}
-.recommendations .recommendations-box {
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.recommendations .recommendations-box .hawaii {
-  background-image: url(/assets/Images/hawaii.jpg);
-  justify-content: space-around;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-}
-.recommendations .recommendations-box .iceland {
-  background-image: url(/assets/Images/iceland.jpg);
-  justify-content: space-around;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-}
-.recommendations .recommendations-box .greece {
-  background-image: url(/assets/Images/greece.jpg);
-  justify-content: space-around;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-}
-.recommendations .recommendations-box .recommendations_box__item {
-  height: 70%;
-  width: 20%;
-  border-radius: 1rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-.recommendations .recommendations-box .recommendations_box__item .item {
-  padding: 0.6rem;
-  color: white;
-  font-weight: 600;
-  font-size: 1.6rem;
-}
-
-.activity {
-  background-color: #FEFAF5;
-  width: 14rem;
-  height: 3.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-h5 {
-  border-bottom: 0.12rem black solid;
-  width: 14rem;
-  text-align: center;
-}
-
 footer {
   background-color: #FEFAF5;
   height: 12vh;
@@ -240,7 +142,70 @@ footer {
   width: 1rem;
 }
 
-h1,
-p {
-  color: #335576;
-}/*# sourceMappingURL=main.css.map */
+.gs-container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/Images/plane.jpg);
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-container {
+  text-align: center;
+}
+
+.form {
+  padding-bottom: 1rem;
+  width: 50%;
+  height: 100%;
+}
+
+.contact-surname,
+.contact-name {
+  width: 25%;
+  border-radius: 5px;
+  height: 45px;
+  padding-left: 15px;
+}
+
+.contact-destination,
+.contact-email {
+  width: 50%;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  height: 45px;
+  padding-left: 15px;
+}
+
+.contact-msg {
+  resize: none;
+  width: 50%;
+  height: 140px;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.contact-btn {
+  width: 25%;
+  height: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #DB7A4E;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  color: #DB7A4E;
+  background-color: white;
+}/*# sourceMappingURL=get-started.css.map */

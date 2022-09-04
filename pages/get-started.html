@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="css/global.css" />
-    <title>Travel Site</title>
+    <link rel="stylesheet" href="/css/get-started.css" />
+    <title>Greece</title>
   </head>
   <body>
     <header>
@@ -14,48 +13,58 @@
         <div class="main-nav__header">Travel site</div>
         <nav>
           <ul class="main-nav__list"">
-          <li id="active"><a class="main-nav__item" href="/index.html">Home</a></li>
-          <li><a class="main-nav__item" href="./pages/hawaii.html">Hawaii</a></li>
-          <li><a class="main-nav__item" href="./pages/iceland.html">Iceland</a></li>
-          <li ><a class="main-nav__item" href="./pages/greece.html">Greece</a></li>
+          <li><a class="main-nav__item" href="/index.html">Home</a></li>
+          <li><a class="main-nav__item" href="./hawaii.html">Hawaii</a></li>
+          <li><a class="main-nav__item" href="./iceland.html">Iceland</a></li>
+          <li id="active"><a class="main-nav__item" href="./greece.html">Greece</a></li>
         </ul>
       </nav>
         
       </section>
     </header>
-    <main>
-      <section class="hero">
-        <div class="hero-left">
-          <div class="hero-header">
-            <h1>Travelling Comes With Endless Discoveries</h1>
-          </div>
-          <div class="hero-text">
-            <p>Don't let your dreams be just dreams.
-               Experience the world by booking a vacation
-               with us now</p>
-          </div>
-          <div class="hero-btn"><a href="./pages/get-started.html"="btn">Get Started</a></div>
-        </div>
-        <div class="hero-right">
-        </div>
-      </section>
-      <section class="recommendations">
-        <div class="recommendations_header">
-          <h2>Recommendations</h2>
-        </div>
-        <article class="recommendations-box ">
-          <div class="recommendations_box__item hawaii">
-            <div class="item">Hawaii</div>
-          </div>
-          <div class="recommendations_box__item iceland">
-            <div class="item">Iceland</div>
-          </div>
-          <div class="recommendations_box__item greece">
-            <div class="item">Greece</div>
-          </div>
-        </article>
-      </section>
-    </main>
+    <section class="gs-container">
+      <div class="contact-container" id="contact">
+      <form>
+        <input
+          class="contact-name"
+          type="text"
+          placeholder="Name"
+          name="name"
+          required
+        />
+        <input
+          class="contact-surname"
+          type="text"
+          placeholder="Surname"
+          name="Surname"
+        />
+        <input
+          class="contact-email"
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          required
+        />
+        <input
+          class="contact-destination"
+          type="text"
+          name="destination"
+          placeholder="Destination"
+        />
+        <textarea
+          class="contact-msg"
+          name="message"
+          placeholder="Type your message here..."
+        ></textarea>
+<br>
+        <button class="contact-btn" type="submit">Send</button>
+      </form>
+    </div>
+    </section>
+  
+
+  
+    </body>
     <footer>
       <section class="footer_container">
         <div class="footer_contact">
