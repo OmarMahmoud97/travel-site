@@ -42,3 +42,17 @@
 }
 }
 }
+
+.activity{
+  background-color: #FEFAF5;
+    width: 14rem;
+    height: 3.1rem;
+    @include flex-center;
+    justify-content: center;
+}
+
+h5{
+      border-bottom: 0.12rem black solid;
+        width: 14rem;
+        text-align: center;
+      }

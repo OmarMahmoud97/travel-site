@@ -12,16 +12,19 @@ footer{
   align-items: flex-start;
 .footer_contact{
   .contact_item{
-    height: 23vh;
+    // height: 23vh;
       display: flex;
       align-items: flex-start;
-      justify-content: space-between;
       flex-direction: column;
     .contact_head{
     color: $secondarycolor;
   }
   .contact_subhead{
         color: $thirdcolor;
+        .contact_subheader{
+         margin: 0; 
+        }
+        
   }
   // .contact_email{
     
@@ -46,11 +49,14 @@ footer{
   padding: 0;
   color: $thirdcolor;
   font-weight: 500;
-  font-size: 0.8rem
+  font-size: 0.8rem;
+  margin: 0;
+  line-height: 0
 };
 };
 .hours{
   width: 100%;
+  line-height: 0;
   ul{
     @include flex-between;
     list-style: none;
@@ -64,8 +70,8 @@ footer{
   width: 15%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    .social_head{
+        .social_head{
+              margin-bottom: 1.5rem;
       .social_header{
     color: $secondarycolor;
   }

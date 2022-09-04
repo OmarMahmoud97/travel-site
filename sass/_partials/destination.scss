@@ -7,11 +7,24 @@
 @use "./footer.scss" as*;
 @use "./mixins" as *;
 
+h1{
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+    position: absolute;
+    left: 5%;
+    top: 13%;
+    font-size: 5rem;
+    z-index: 0;
+}
 
 .destination-container1,
 .destination-container2,
 .destination-container3{
-  @include card
+  background-size: cover;
+    background-position: center;
+  // @include card
+  padding-top: 4rem;
 }
 
 
@@ -32,7 +45,6 @@ background-image: url(/assets/Images/iceland.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 4rem;
 }
 
 .day {
