@@ -5,21 +5,16 @@
 @use "./mixins" as *;
 
 
-.gs-container{
+.gettingstarted{
 height: 80vh;
 @include flex-center;
+justify-content: center;
 background-image: url(/assets/Images/plane.jpg);
 @include card;
 }
-.contact-container {
+.gettingstarted__container {
   text-align: center;
 }
-
-.form {
-  padding-bottom: 1rem;
-  width: 50%;
-  height: 100%;
-  }
 
 .contact-surname,
 .contact-name {

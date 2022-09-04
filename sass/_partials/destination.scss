@@ -18,9 +18,9 @@ h1{
     z-index: 0;
 }
 
-.destination-container1,
-.destination-container2,
-.destination-container3{
+.destination__greece,
+.destination__hawaii,
+.destination__iceland{
   background-size: cover;
     background-position: center;
   // @include card
@@ -29,31 +29,28 @@ h1{
 
 
 
-.destination-container1 {
+.destination__greece {
   background-image: url(/assets/Images/greece.jpg);
 }
 
-.destination-container2{
+.destination__hawaii{
 background-image: url(/assets/Images/hawaii.jpg);
 }
 
-.destination-container3{
+.destination__iceland{
 background-image: url(/assets/Images/iceland.jpg);
 }
 .destination {
   height: 90vh;
-  display: flex;
-  align-items: center;
+  @include flex-center;
   justify-content: center;
 }
 
-.day {
+.destination__day {
   background: #ffff;
   width: 20vw;
   margin: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
   height: 50%;
   border-radius: 0.6rem;
   flex-direction: column;
@@ -61,9 +58,7 @@ background-image: url(/assets/Images/iceland.jpg);
   padding-bottom: 1rem;
   ul{
     list-style: none;
-    display: flex;
-      align-items: center;
-      justify-content: space-between;
+    @include flex-between;
       flex-direction: column;
       height: 100%;
       padding: 0;
@@ -72,4 +67,17 @@ background-image: url(/assets/Images/iceland.jpg);
     margin: 0;
     font-size: 1.2rem;
   }
+}
+.destination__activity {
+  background-color: #FEFAF5;
+  width: 14rem;
+  height: 3.1rem;
+  @include flex-center;
+  justify-content: center;
+}
+
+h5 {
+  border-bottom: 0.12rem black solid;
+  width: 14rem;
+  text-align: center;
 }

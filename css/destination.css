@@ -18,7 +18,7 @@ html body {
   margin-top: 0.2rem;
 }
 
-.main-nav {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,13 +29,16 @@ html body {
   height: 4rem;
   z-index: 1;
 }
-.main-nav .main-nav__header {
+.navbar a {
+  text-decoration: none;
+}
+.navbar__header {
   font-size: 1.6rem;
   font-weight: 600;
   color: #335576;
   margin-left: 5rem;
 }
-.main-nav .main-nav__list {
+.navbar__list {
   justify-content: space-around;
   display: flex;
   align-items: center;
@@ -44,7 +47,7 @@ html body {
   margin-right: 4rem;
   font-weight: 600;
 }
-.main-nav .main-nav__list li .main-nav__item {
+li .navbar__list__item {
   color: #335576;
   text-decoration: none;
 }
@@ -54,24 +57,32 @@ html body {
   align-items: center;
   justify-content: space-evenly;
   background-color: #fefaf5;
-  height: 50vh;
+  height: 55vh;
   padding-top: 4rem;
 }
-.hero .hero-left {
+.hero .hero__left {
   width: 47vw;
 }
-.hero .hero-left h1 {
+.hero .hero__left h1 {
   font-size: 2.2rem;
 }
-.hero .hero-left a {
+.hero .hero__left a {
   background-color: #DB7A4E;
+  color: white;
   padding: 0.5rem 2rem;
   border-radius: 2rem;
-  color: white;
   font-weight: 500;
   text-decoration: none;
 }
-.hero .hero-right {
+.hero .hero__left a:hover {
+  background-color: white;
+  color: #DB7A4E;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.hero .hero__right {
   display: flex;
   align-items: center;
   background-image: url(../../assets/Images/hero.png);
@@ -81,19 +92,20 @@ html body {
   width: 24rem;
 }
 
-.recommendations .recommendations_header {
+.recommendations .recommendations__header {
   font-size: 1.6rem;
   font-weight: 600;
   color: #335576;
+  padding-left: 2rem;
 }
-.recommendations .recommendations-box {
+.recommendations .recommendations__box {
   width: 100%;
   height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.recommendations .recommendations-box .hawaii {
+.recommendations .recommendations__box .hawaii {
   background-image: url(/assets/Images/hawaii.jpg);
   justify-content: space-around;
   display: flex;
@@ -101,7 +113,7 @@ html body {
   background-size: cover;
   background-position: center;
 }
-.recommendations .recommendations-box .iceland {
+.recommendations .recommendations__box .iceland {
   background-image: url(/assets/Images/iceland.jpg);
   justify-content: space-around;
   display: flex;
@@ -109,7 +121,7 @@ html body {
   background-size: cover;
   background-position: center;
 }
-.recommendations .recommendations-box .greece {
+.recommendations .recommendations__box .greece {
   background-image: url(/assets/Images/greece.jpg);
   justify-content: space-around;
   display: flex;
@@ -117,34 +129,20 @@ html body {
   background-size: cover;
   background-position: center;
 }
-.recommendations .recommendations-box .recommendations_box__item {
+.recommendations .recommendations__box .recommendations__box--item {
   height: 70%;
   width: 20%;
   border-radius: 1rem;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  text-decoration: none;
 }
-.recommendations .recommendations-box .recommendations_box__item .item {
+.recommendations .recommendations__box .recommendations__box--item .item {
   padding: 0.6rem;
   color: white;
   font-weight: 600;
   font-size: 1.6rem;
-}
-
-.activity {
-  background-color: #FEFAF5;
-  width: 14rem;
-  height: 3.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-h5 {
-  border-bottom: 0.12rem black solid;
-  width: 14rem;
-  text-align: center;
 }
 
 footer {
@@ -152,42 +150,49 @@ footer {
   height: 12vh;
 }
 
-.footer_container {
+.footer {
   justify-content: space-around;
   display: flex;
   align-items: center;
   background-color: #FEFAF5;
   align-items: flex-start;
 }
-.footer_container .footer_contact .contact_item {
+.footer .footer__contact .footer__contact--item {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.footer_container .footer_contact .contact_item .contact_head {
+.footer .footer__contact .footer__contact--item .footer__contact--head {
   color: #335576;
 }
-.footer_container .footer_contact .contact_item .contact_subhead {
+.footer .footer__contact .footer__contact--item .footer__contact--subhead {
   color: #DB7A4E;
 }
-.footer_container .footer_contact .contact_item .contact_subhead .contact_subheader {
+.footer .footer__contact .footer__contact--item .footer__contact--subhead .footer__contact--subheader {
   margin: 0 0 0.4rem 0;
   font-size: 0.85rem;
   font-weight: 600;
 }
-.footer_container .footer_hours {
+.footer .footer__contact .footer__contact--item .footer__contact--email {
+  padding-top: 1rem;
+}
+.footer .footer__contact .footer__contact--item .footer__contact--email .email {
+  text-decoration: none;
+  color: #335576;
+}
+.footer .footer__hours {
   width: 50vw;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.footer_container .footer_hours .hours_header {
+.footer .footer__hours .footer__hours--header {
   color: #335576;
 }
-.footer_container .footer_hours .hours_subheader {
+.footer .footer__hours .footer__hours--subheader {
   width: 100%;
 }
-.footer_container .footer_hours .hours_subheader ul {
+.footer .footer__hours .footer__hours--subheader ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,12 +205,12 @@ footer {
   margin: 0;
   line-height: 0;
 }
-.footer_container .footer_hours .hours {
+.footer .footer__hours .footer__hours--times {
   width: 100%;
   line-height: 0;
   color: #335576;
 }
-.footer_container .footer_hours .hours ul {
+.footer .footer__hours .footer__hours--times ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -213,30 +218,30 @@ footer {
   flex-direction: row;
   padding: 0;
 }
-.footer_container .footer_social {
+.footer .footer__social {
   height: 10rem;
   width: 15%;
   display: flex;
   flex-direction: column;
 }
-.footer_container .footer_social .social_head {
+.footer .footer__social .footer__social--head {
   margin-bottom: 1.5rem;
 }
-.footer_container .footer_social .social_head .social_header {
+.footer .footer__social .footer__social--head .footer__social--header {
   color: #335576;
 }
-.footer_container .footer_social .social_icons {
+.footer .footer__social .footer__social--icons {
   justify-content: space-between;
   display: flex;
   align-items: flex-start;
 }
-.footer_container .footer_social .social_icons a {
+.footer .footer__social .footer__social--icons a {
   text-decoration: none;
 }
-.footer_container .footer_social .social_icons a img {
+.footer .footer__social .footer__social--icons a img {
   width: 2rem;
 }
-.footer_container .footer_social .social_icons a .facebook {
+.footer .footer__social .footer__social--icons a .facebook {
   width: 1rem;
 }
 
@@ -251,23 +256,23 @@ h1 {
   z-index: 0;
 }
 
-.destination-container1,
-.destination-container2,
-.destination-container3 {
+.destination__greece,
+.destination__hawaii,
+.destination__iceland {
   background-size: cover;
   background-position: center;
   padding-top: 4rem;
 }
 
-.destination-container1 {
+.destination__greece {
   background-image: url(/assets/Images/greece.jpg);
 }
 
-.destination-container2 {
+.destination__hawaii {
   background-image: url(/assets/Images/hawaii.jpg);
 }
 
-.destination-container3 {
+.destination__iceland {
   background-image: url(/assets/Images/iceland.jpg);
 }
 
@@ -278,20 +283,19 @@ h1 {
   justify-content: center;
 }
 
-.day {
+.destination__day {
   background: white;
   width: 20vw;
   margin: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 50%;
   border-radius: 0.6rem;
   flex-direction: column;
   padding: 1rem;
   padding-bottom: 1rem;
 }
-.day ul {
+.destination__day ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -300,7 +304,22 @@ h1 {
   height: 100%;
   padding: 0;
 }
-.day h5 {
+.destination__day h5 {
   margin: 0;
   font-size: 1.2rem;
+}
+
+.destination__activity {
+  background-color: #FEFAF5;
+  width: 14rem;
+  height: 3.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h5 {
+  border-bottom: 0.12rem black solid;
+  width: 14rem;
+  text-align: center;
 }/*# sourceMappingURL=destination.css.map */

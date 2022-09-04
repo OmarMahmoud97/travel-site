@@ -18,7 +18,7 @@ html body {
   margin-top: 0.2rem;
 }
 
-.main-nav {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,13 +29,16 @@ html body {
   height: 4rem;
   z-index: 1;
 }
-.main-nav .main-nav__header {
+.navbar a {
+  text-decoration: none;
+}
+.navbar__header {
   font-size: 1.6rem;
   font-weight: 600;
   color: #335576;
   margin-left: 5rem;
 }
-.main-nav .main-nav__list {
+.navbar__list {
   justify-content: space-around;
   display: flex;
   align-items: center;
@@ -44,7 +47,7 @@ html body {
   margin-right: 4rem;
   font-weight: 600;
 }
-.main-nav .main-nav__list li .main-nav__item {
+li .navbar__list__item {
   color: #335576;
   text-decoration: none;
 }
@@ -54,42 +57,49 @@ footer {
   height: 12vh;
 }
 
-.footer_container {
+.footer {
   justify-content: space-around;
   display: flex;
   align-items: center;
   background-color: #FEFAF5;
   align-items: flex-start;
 }
-.footer_container .footer_contact .contact_item {
+.footer .footer__contact .footer__contact--item {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.footer_container .footer_contact .contact_item .contact_head {
+.footer .footer__contact .footer__contact--item .footer__contact--head {
   color: #335576;
 }
-.footer_container .footer_contact .contact_item .contact_subhead {
+.footer .footer__contact .footer__contact--item .footer__contact--subhead {
   color: #DB7A4E;
 }
-.footer_container .footer_contact .contact_item .contact_subhead .contact_subheader {
+.footer .footer__contact .footer__contact--item .footer__contact--subhead .footer__contact--subheader {
   margin: 0 0 0.4rem 0;
   font-size: 0.85rem;
   font-weight: 600;
 }
-.footer_container .footer_hours {
+.footer .footer__contact .footer__contact--item .footer__contact--email {
+  padding-top: 1rem;
+}
+.footer .footer__contact .footer__contact--item .footer__contact--email .email {
+  text-decoration: none;
+  color: #335576;
+}
+.footer .footer__hours {
   width: 50vw;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.footer_container .footer_hours .hours_header {
+.footer .footer__hours .footer__hours--header {
   color: #335576;
 }
-.footer_container .footer_hours .hours_subheader {
+.footer .footer__hours .footer__hours--subheader {
   width: 100%;
 }
-.footer_container .footer_hours .hours_subheader ul {
+.footer .footer__hours .footer__hours--subheader ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -102,12 +112,12 @@ footer {
   margin: 0;
   line-height: 0;
 }
-.footer_container .footer_hours .hours {
+.footer .footer__hours .footer__hours--times {
   width: 100%;
   line-height: 0;
   color: #335576;
 }
-.footer_container .footer_hours .hours ul {
+.footer .footer__hours .footer__hours--times ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -115,37 +125,38 @@ footer {
   flex-direction: row;
   padding: 0;
 }
-.footer_container .footer_social {
+.footer .footer__social {
   height: 10rem;
   width: 15%;
   display: flex;
   flex-direction: column;
 }
-.footer_container .footer_social .social_head {
+.footer .footer__social .footer__social--head {
   margin-bottom: 1.5rem;
 }
-.footer_container .footer_social .social_head .social_header {
+.footer .footer__social .footer__social--head .footer__social--header {
   color: #335576;
 }
-.footer_container .footer_social .social_icons {
+.footer .footer__social .footer__social--icons {
   justify-content: space-between;
   display: flex;
   align-items: flex-start;
 }
-.footer_container .footer_social .social_icons a {
+.footer .footer__social .footer__social--icons a {
   text-decoration: none;
 }
-.footer_container .footer_social .social_icons a img {
+.footer .footer__social .footer__social--icons a img {
   width: 2rem;
 }
-.footer_container .footer_social .social_icons a .facebook {
+.footer .footer__social .footer__social--icons a .facebook {
   width: 1rem;
 }
 
-.gs-container {
+.gettingstarted {
   height: 80vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-image: url(/assets/Images/plane.jpg);
   justify-content: space-around;
   display: flex;
@@ -154,14 +165,8 @@ footer {
   background-position: center;
 }
 
-.contact-container {
+.gettingstarted__container {
   text-align: center;
-}
-
-.form {
-  padding-bottom: 1rem;
-  width: 50%;
-  height: 100%;
 }
 
 .contact-surname,

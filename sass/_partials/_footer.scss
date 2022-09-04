@@ -6,43 +6,47 @@ footer{
   background-color: #FEFAF5;
     height: 12vh;
 }
-.footer_container{
+.footer{
   @include flex-around;
   background-color: $primarycolor;
   align-items: flex-start;
-.footer_contact{
-  .contact_item{
-    // height: 23vh;
+.footer__contact{
+  .footer__contact--item{
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-    .contact_head{
+    .footer__contact--head{
     color: $secondarycolor;
   }
-  .contact_subhead{
+  .footer__contact--subhead{
         color: $thirdcolor;
-        .contact_subheader{
+        .footer__contact--subheader{
          margin: 0 0 0.4rem 0;
          font-size: 0.85rem;
          font-weight: 600;
         }
         
   }
-  // .contact_email{
-    
-  // }
+  .footer__contact--email{
+    padding-top: 1rem;
+.email {
+    text-decoration: none;
+    color: $secondarycolor;
+  }
+
+  }
 }
   
 }
- .footer_hours{
+ .footer__hours{
   width: 50vw;
   display: flex;
     align-items: flex-start;
     flex-direction: column;
-    .hours_header{
+    .footer__hours--header{
   color: $secondarycolor;
   }
-  .hours_subheader{
+  .footer__hours--subheader{
     width: 100%;
   ul{
     @include flex-between;
@@ -56,7 +60,7 @@ footer{
   line-height: 0
 };
 };
-.hours{
+.footer__hours--times{
   width: 100%;
   line-height: 0;
   color:$secondarycolor;
@@ -68,18 +72,18 @@ footer{
   }
 }
  }
- .footer_social{
+ .footer__social{
   height: 10rem;
   width: 15%;
     display: flex;
     flex-direction: column;
-        .social_head{
+        .footer__social--head{
               margin-bottom: 1.5rem;
-      .social_header{
+      .footer__social--header{
     color: $secondarycolor;
   }
     }
-  .social_icons{
+  .footer__social--icons{
     justify-content: space-between;
       display: flex;
       align-items: flex-start;
@@ -98,8 +102,3 @@ footer{
   
  }
 }
-
-
-
-
-
